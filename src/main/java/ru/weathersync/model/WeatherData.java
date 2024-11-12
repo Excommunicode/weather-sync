@@ -40,6 +40,6 @@ public class WeatherData {
     private Integer feelsLike;
 
     private String condition;
-
+    @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 }

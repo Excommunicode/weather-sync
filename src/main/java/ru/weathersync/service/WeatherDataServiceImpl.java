@@ -29,7 +29,7 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 
     @Override
     public WeatherDataDto getWeatherData(String city) throws JsonProcessingException {
-        System.out.println(city);
+
         City cityEnum = City.valueOf(normalize(city));
         return weatherHttpClient.fetchWeatherData(cityEnum.getLatitude(), cityEnum.getLongitude());
     }
