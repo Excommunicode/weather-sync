@@ -7,6 +7,7 @@ import ru.weathersync.dto.WeatherDataDto;
 import java.util.List;
 
 public interface WeatherDataService {
+
     WeatherDataDto getWeatherData(double latitude, double longitude) throws JsonProcessingException;
 
     WeatherDataDto getWeatherData(String city) throws JsonProcessingException;
